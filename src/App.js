@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import './App.css'
 import MovieList from './components/MovieList';
 
 
@@ -25,8 +27,11 @@ const App = () => {
       "Type": "movie",
       "Poster": "https://m.media-amazon.com/images/M/MV5BOWZlMjFiYzgtMTUzNC00Y2IzLTk1NTMtZmNhMTczNTk0ODk1XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
     },]);
-  return <div>
-    <MovieList movies ={movies}/>
+  return <div className='container-fluid'>
+    <div className="row">
+      <MovieList movies={movies} />
+    </div>
+
   </div>;
 };
 
